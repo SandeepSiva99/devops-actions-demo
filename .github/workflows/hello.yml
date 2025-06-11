@@ -1,0 +1,11 @@
+name: Hello DevOps Workflow
+
+on: push  # Trigger this workflow on any code push
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "👋 Hello DevOps from GitHub Actions!"
